@@ -1,0 +1,17 @@
+<div>
+  <article *ngFor="let sheet of routingsheet">
+    <h4>Маршрутное лист №{{ sheet.id }}</h4>
+    <span>Смену принял {{ sheet.accepted }}</span>
+    <span>Маршрут для водителя на сегодняшний день:</span>
+    <span>{{ sheet.time1 }} {{ sheet.place11 }} — {{ sheet.place12 }} (остановка 5 мин.)</span>
+    <span>{{ sheet.time2 }} {{ sheet.place21 }} — {{ sheet.place22 }} (остановка 5 мин.)</span>
+    <span>{{ sheet.time3 }} {{ sheet.place31 }} — {{ sheet.place32 }} (остановка 5 мин.)</span>
+    <span>{{ sheet.time4 }} {{ sheet.place41 }} — {{ sheet.place42 }} (остановка 5 мин.)</span>
+    <span>{{ sheet.time5 }} {{ sheet.place51 }} — {{ sheet.place52 }} (остановка 5 мин.)</span>
+    <span>Бензин: талон на {{ sheet.lieter }} л. бензина ({{sheet.gaz}})</span>
+    <span>Перерыв для водителя {{ sheet.break }} час</span>
+    <span>Транспорт проверил на целостность главный механик</span>
+    <span>Смену сдал {{ sheet.relieved }}</span>
+    <a routerLink="/routingsheet/{{sheet.id}}"> Читать далее </a>
+  </article>
+</div>

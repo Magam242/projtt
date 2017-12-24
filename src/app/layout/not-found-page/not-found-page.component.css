@@ -1,0 +1,11 @@
+div {
+    margin-top: 10px;
+    background: url('404.jpg') no-repeat;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+}
+
+h2 {
+    text-align: center;
+}

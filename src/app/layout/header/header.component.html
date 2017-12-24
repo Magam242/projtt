@@ -1,0 +1,17 @@
+<mdl-layout-header-row>
+  <mdl-layout-title>Маршрутные пути</mdl-layout-title>
+  <mdl-layout-spacer></mdl-layout-spacer>
+  <nav class="mdl-navigation mdl-layout--large-screen-only">
+     <a class="mdl-navigation__link" routerLink="/">Маршрутное письмо</a>
+     <a class="mdl-navigation__link" routerLink="/contacts">Контакты</a>
+  </nav>
+  <mdl-layout-spacer></mdl-layout-spacer>
+  Добро пожаловать, {{ username }}
+  <button mdl-button #btn1="mdlButton" (click)="m1.toggle($event, btn1)" mdl-button-type="icon" mdl-ripple><mdl-icon>more_vert</mdl-icon></button>
+  <mdl-menu #m1="mdlMenu" mdl-menu-position="bottom-right">
+     <mdl-menu-item mdl-ripple (click)="action()">Some Action</mdl-menu-item>
+     <mdl-menu-item mdl-ripple mdl-menu-item-full-bleed-divider>Another Action</mdl-menu-item>
+     <mdl-menu-item mdl-ripple disabled>Disabled Action</mdl-menu-item>
+     <mdl-menu-item>Yet Another Action</mdl-menu-item>
+  </mdl-menu>
+</mdl-layout-header-row>
